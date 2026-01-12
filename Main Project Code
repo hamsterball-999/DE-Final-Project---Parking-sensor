@@ -3,8 +3,8 @@ from time import sleep
 
 ultrasonic_sensor = UltrasonicSensor("D4")
 red = LED("D2")
-yellow = LED("D0")
-green = LED("D1")
+yellow = LED("D1")
+green = LED("D0")
 buzzer = Buzzer("D3")
 
 while True:
