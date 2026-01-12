@@ -1,0 +1,27 @@
+from pitop import UltrasonicSensor, LED, Buzzer
+from time import sleep
+
+ultrasonic_sensor = UltrasonicSensor("D4")
+red = LED("D2")
+yellow = LED("D0")
+green = LED("D1")
+buzzer = Buzzer("D3")
+
+while True:
+    print(ultrasonic_sensor.distance)
+    sleep(0.1)
+    if ultrasonic_sensor.distance > 0.3:
+        green.on()
+        yellow.off()
+        red.off()
+        buzzer.off()
+    elif ultrasonic_sensor.distance < 0.15 and ultrasonic_sensor.distance > 0.10:
+        green.off()
+        yellow.on()
+        red.off()
+        buzzer.off()
+    elif ultrasonic_sensor.distance < 0.09:
+        green.off()
+        yellow.off()
+        red.on()
+        buzzer.on()
