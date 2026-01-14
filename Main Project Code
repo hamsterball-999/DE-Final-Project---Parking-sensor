@@ -15,13 +15,17 @@ while True:
         yellow.off()
         red.off()
         buzzer.off()
+        screen.display_text("All Good")
     elif ultrasonic_sensor.distance < 0.15 and ultrasonic_sensor.distance > 0.10:
         green.off()
         yellow.on()
         red.off()
         buzzer.off()
+        screen.display_text("Getting Closer...")
     elif ultrasonic_sensor.distance < 0.09:
         green.off()
         yellow.off()
         red.on()
         buzzer.on()
+        screen.display_text("Stop!!")
+
