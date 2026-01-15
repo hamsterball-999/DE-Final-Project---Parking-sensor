@@ -33,6 +33,7 @@ The program begins by importing the necessary pi-top components and a timing fun
 One of the main challenges was determining appropriate distance thresholds that provided clear and reliable feedback without rapidly switching between states. Another challenge involved ensuring that the LEDs and buzzer were properly synchronized so that only the correct indicators were active at any given time. Additionally, working with real-time sensor data required careful timing to avoid unstable or inconsistent readings. Through this project, I gained a better understanding of how ultrasonic sensors operate, how to integrate multiple output devices, and how to structure control logic for real-time embedded systems. I also became more comfortable working with hardware components in Python and organizing a project clearly using GitHub documentation.
 
 **Showcase photos and videos:**
+
 [https://drive.google.com/file/d/1x4WVU7DAQYifuxiBvSGAYZdo9aPOsngs/view?t=1
 ](url)
 [https://drive.google.com/file/d/1kCDwhUGucBwEkaq6Ff_JgwSOMPAH3Qe4/view](url)
